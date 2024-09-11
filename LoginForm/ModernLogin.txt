@@ -1,0 +1,19 @@
+create database ModernLogin
+
+use ModernLogin
+
+create table [User] (
+		Username nvarchar(40) primary key,
+		Password varchar(20),
+		role int
+)
+
+go
+insert into [User] values('hung68cva@gmail.com','0905811862','1')
+insert into [User] values('HuuHuy@gmail.com','123','2')
+insert into [User] values('vietThong@gmail.com','321','2')
+insert into [User] values('quangTam@gmail.com','567','2')
+insert into [User] values('quangDat@gmail.com','765','2')
+
+select * from [User]
+DELETE FROM [User] WHERE Password = '1111';
